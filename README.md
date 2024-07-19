@@ -6,7 +6,9 @@
 
 </br>
 
-![Alt text](img/P_20240719_110004.jpg)
+<div style="text-align: center;">
+<img src="img/P_20240719_110004.jpg" alt="Alt text" width="200" height="400">
+</div>
 
 
 Exemplo de Firmware escrito no MSP430G2553 que configura 3 Leds do tipo RGB, em uma fita WS2812B. A transmissão dos comandos é por SPI. 
