@@ -12,6 +12,8 @@
 
 
 Exemplo de Firmware escrito no **MSP430G2553** que configura 3 Leds do tipo **RGB**, em uma fita **WS2812B**. A transmissão dos comandos é por **SPI**. 
+</br>
+
 
 ## Detalhes do projeto
 
@@ -20,6 +22,9 @@ Foi utilizado como base de desenvolvimento o projeto kkelipCore
 Algumas modificações foram aplicadas nesse projeto para facilitar a leitura do código. No kkelipCore, a memória Flash e SRAM são manipulados para aplicar as cores nos led(s). Nessa versão as cores são lidas diretamente na memória de programa. 
 
 As cores aplicadas a essa demonstração são Vermelho, Amarelo e Verde. A configuração das cores dos leds segue a de um semáforo de trânsito. A seguir o fragmento de código que contêm a configuração.
+
+</br>
+
 
 ## ⚠️ Observação
 </br>
@@ -42,6 +47,8 @@ LED_CC_COLOR_DEFAULT
 ;-------------------------------------------------------------------------------
 
 ````
+
+</br>
 
 ## Ponto de Analise
 </br>
@@ -82,5 +89,25 @@ main_loop_on_leds       nop
 ;-------------------------------------------------------------------------------
 
 ````
+
+
+👉 **As ligações** 
+
+<table>
+   <tr>
+      <td style="text-align: center;">MSP-EXP430G2</td><td style="text-align: center;">LED</td><td style="text-align: center;">Fonte de Alimentação</td>
+   </tr>
+   <tr>
+      <td style="text-align: center;">P1.7</td><td>DIN</td><td style="text-align: center;">ND</td> 
+   </tr>
+   <tr>
+    <td style="text-align: center;">ND</td><td style="text-align: center;">VCC</td><td style="text-align: center;">5v+</td>
+   </tr>
+   <tr>
+   <td style="text-align: center;">GND</td><td style="text-align: center;">GND</td><td style="text-align: center;">5v-</td>
+   </tr>
+</table>
+
+</br>
 
 
